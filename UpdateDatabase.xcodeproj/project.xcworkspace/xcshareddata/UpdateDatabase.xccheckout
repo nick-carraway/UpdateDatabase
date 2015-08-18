@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>490AAA20-8C93-4F30-AD55-DD84AD2CAAAD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UpdateDatabase</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>59C05689639EF86734E748A2973F80DFD03B7001</key>
+		<string>github.com:nick-carraway/UpdateDatabase.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UpdateDatabase.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>59C05689639EF86734E748A2973F80DFD03B7001</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:nick-carraway/UpdateDatabase.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>59C05689639EF86734E748A2973F80DFD03B7001</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>59C05689639EF86734E748A2973F80DFD03B7001</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UpdateDatabase</string>
+		</dict>
+	</array>
+</dict>
+</plist>
