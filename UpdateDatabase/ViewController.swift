@@ -49,13 +49,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         insertToServerFunction(userInput, heightParameter: heightInput, weightParameter: weightInput)
         
         var alert = UIAlertController(title: "Data added", message: "You have added user " + userInput + ".  Height is " + heightInput + ".  Weight is " + weightInput + ".", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Roger roger", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
     
     @IBAction func selectButtonPressed(sender: AnyObject) {
         //selectToServerFunction()
+        println("Data selected.")
     }
     
     //updateButtonPressed will be a tricky one to solve.
