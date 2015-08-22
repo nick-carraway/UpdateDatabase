@@ -22,10 +22,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="44" y="156" width="39" height="30"/>
+                                    <rect key="frame" x="44" y="156" width="135" height="40"/>
                                 </variation>
                                 <connections>
-                                    <action selector="insertChosen:" destination="xxE-ho-00c" eventType="touchUpInside" id="Cbr-ma-AFW"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="oOt-TD-7Es"/>
                                 </connections>
                             </button>
@@ -35,10 +34,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="44" y="268" width="51" height="30"/>
+                                    <rect key="frame" x="44" y="319" width="135" height="65"/>
                                 </variation>
                                 <connections>
-                                    <action selector="updateChosen:" destination="xxE-ho-00c" eventType="touchUpInside" id="fOM-1m-yGr"/>
                                     <segue destination="lau-ob-sv4" kind="presentation" id="YKi-18-uqc"/>
                                 </connections>
                             </button>
@@ -48,10 +46,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="44" y="212" width="43" height="30"/>
+                                    <rect key="frame" x="44" y="236" width="135" height="46"/>
                                 </variation>
                                 <connections>
-                                    <action selector="selectChosen:" destination="xxE-ho-00c" eventType="touchUpInside" id="agq-7f-Nr7"/>
                                     <segue destination="Oo5-G9-syq" kind="presentation" id="tfj-g1-jfH"/>
                                 </connections>
                             </button>
@@ -89,26 +86,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrg-Gb-utz">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="62" y="456" width="35" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="insertBackButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3dO-dg-0YY"/>
-                                    <segue destination="xxE-ho-00c" kind="presentation" id="qcL-Q2-g0M"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="227" verticalHuggingPriority="246" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq2-eR-aB4" userLabel="Send the Data">
                                 <rect key="frame" x="0.0" y="66" width="600" height="68"/>
                                 <state key="normal" title="Send the Data">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-32" y="404" width="287" height="56"/>
+                                    <rect key="frame" x="24" y="404" width="287" height="56"/>
                                 </variation>
                                 <connections>
                                     <action selector="insertButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dug-ix-Pha"/>
@@ -165,11 +149,22 @@
                                     <rect key="frame" x="62" y="56" width="36" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrg-Gb-utz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="124" y="458" width="86" height="43"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="xxE-ho-00c" kind="presentation" id="qcL-Q2-g0M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Lrg-Gb-utz"/>
                                 <exclude reference="eq2-eR-aB4"/>
                                 <exclude reference="x7Q-IE-bS0"/>
                                 <exclude reference="lkD-Qb-XXh"/>
@@ -177,11 +172,11 @@
                                 <exclude reference="MlQ-8c-bgj"/>
                                 <exclude reference="qZC-jf-XVW"/>
                                 <exclude reference="ZRt-ax-VJm"/>
+                                <exclude reference="Lrg-Gb-utz"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Lrg-Gb-utz"/>
                                 <include reference="eq2-eR-aB4"/>
                                 <include reference="x7Q-IE-bS0"/>
                                 <include reference="lkD-Qb-XXh"/>
@@ -189,6 +184,7 @@
                                 <include reference="MlQ-8c-bgj"/>
                                 <include reference="qZC-jf-XVW"/>
                                 <include reference="ZRt-ax-VJm"/>
+                                <include reference="Lrg-Gb-utz"/>
                             </mask>
                         </variation>
                     </view>
@@ -223,20 +219,7 @@
                                     <rect key="frame" x="63" y="518" width="35" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="updateBackButtonPressed:" destination="lau-ob-sv4" eventType="touchUpInside" id="Dbz-U8-4yU"/>
                                     <segue destination="xxE-ho-00c" kind="presentation" id="TIC-as-G7X"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQd-fo-KZb" userLabel="Update the Data">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Update the Data">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="9" y="469" width="143" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="updateButtonPressed:" destination="lau-ob-sv4" eventType="touchUpInside" id="7RA-r9-J1Q"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field to Update" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDH-sf-CvM">
@@ -301,30 +284,39 @@
                                     <rect key="frame" x="21" y="372" width="179" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQd-fo-KZb" userLabel="Update the Data">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Update the Data">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="9" y="469" width="143" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="9L6-Rw-TYZ"/>
-                                <exclude reference="pQd-fo-KZb"/>
                                 <exclude reference="RDH-sf-CvM"/>
                                 <exclude reference="xBN-67-r9r"/>
                                 <exclude reference="sHi-5J-buL"/>
                                 <exclude reference="I7Z-in-uOO"/>
                                 <exclude reference="vxj-4Z-zfd"/>
                                 <exclude reference="pQR-T8-dsb"/>
+                                <exclude reference="pQd-fo-KZb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="9L6-Rw-TYZ"/>
-                                <include reference="pQd-fo-KZb"/>
                                 <include reference="RDH-sf-CvM"/>
                                 <include reference="xBN-67-r9r"/>
                                 <include reference="sHi-5J-buL"/>
                                 <include reference="I7Z-in-uOO"/>
                                 <include reference="vxj-4Z-zfd"/>
                                 <include reference="pQR-T8-dsb"/>
+                                <include reference="pQd-fo-KZb"/>
                             </mask>
                         </variation>
                     </view>
@@ -356,10 +348,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="9" y="49" width="35" height="30"/>
+                                    <rect key="frame" x="45" y="74" width="117" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="selectBackButtonPressed:" destination="Oo5-G9-syq" eventType="touchUpInside" id="OGU-IU-HEu"/>
                                     <segue destination="xxE-ho-00c" kind="presentation" id="St6-Rl-5FW"/>
                                 </connections>
                             </button>
@@ -369,101 +360,165 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="9" y="20" width="106" height="30"/>
+                                    <rect key="frame" x="45" y="28" width="128" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="selectButtonPressed:" destination="Oo5-G9-syq" eventType="touchUpInside" id="KmN-Ft-CDl"/>
+                                    <action selector="selectButtonPressed:" destination="Oo5-G9-syq" eventType="touchUpInside" id="faP-YZ-wBa"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" text="Selected data will appear here." translatesAutoresizingMaskIntoConstraints="NO" id="r8f-Vx-mre">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiperLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O34-tA-WRD">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.74341987197465331" green="0.88498291825202235" blue="0.89393939393939381" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="9" y="87" width="293" height="29"/>
+                                    <rect key="frame" x="16" y="326" width="159" height="95"/>
                                 </variation>
-                            </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ziM-jk-zHr">
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMV-we-aBs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Create Subview">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="213" y="28" width="141" height="42"/>
+                                </variation>
+                                <connections>
+                                    <action selector="createSubviewButtonPressed:" destination="Oo5-G9-syq" eventType="touchUpInside" id="nDl-Kj-QAT"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ziM-jk-zHr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="WLf-Q2-NtT" customClass="TaskCell" customModule="UpdateDatabase" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="105" id="WLf-Q2-NtT" customClass="TaskCell" customModule="UpdateDatabase" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WLf-Q2-NtT" id="FEi-Xy-iAD">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3H-Vo-0kp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="heightLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpp-dq-KBq">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="8" y="8" width="263" height="28"/>
+                                                        <rect key="frame" x="122" y="44" width="142" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weightLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85f-x7-0a7">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="122" y="74" width="142" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlo-LF-hyi" userLabel="userStaticLabel">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="14" y="12" width="94" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height (in.): " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwZ-zC-Xs5" userLabel="heightStaticLabel">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="14" y="44" width="94" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight (lbs): " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxb-k1-NKc" userLabel="weightStaticLabel">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="14" y="74" width="94" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3H-Vo-0kp" userLabel="userLabel">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="122" y="9" width="142" height="28"/>
                                                     </variation>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <variation key="default">
                                                 <mask key="subviews">
+                                                    <exclude reference="Cpp-dq-KBq"/>
+                                                    <exclude reference="85f-x7-0a7"/>
+                                                    <exclude reference="Xlo-LF-hyi"/>
+                                                    <exclude reference="NwZ-zC-Xs5"/>
+                                                    <exclude reference="Wxb-k1-NKc"/>
                                                     <exclude reference="k3H-Vo-0kp"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
+                                                    <include reference="Cpp-dq-KBq"/>
+                                                    <include reference="85f-x7-0a7"/>
+                                                    <include reference="Xlo-LF-hyi"/>
+                                                    <include reference="NwZ-zC-Xs5"/>
+                                                    <include reference="Wxb-k1-NKc"/>
                                                     <include reference="k3H-Vo-0kp"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="taskLabel" destination="k3H-Vo-0kp" id="HeC-7A-tcq"/>
+                                            <outlet property="heightLabel" destination="Cpp-dq-KBq" id="OLA-wO-1Nz"/>
+                                            <outlet property="userLabel" destination="k3H-Vo-0kp" id="XOe-a9-J1f"/>
+                                            <outlet property="weightLabel" destination="85f-x7-0a7" id="Lph-WV-Shp"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="171" width="279" height="207"/>
+                                    <rect key="frame" x="16" y="123" width="345" height="188"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="Oo5-G9-syq" id="88m-xP-Jbm"/>
                                     <outlet property="delegate" destination="Oo5-G9-syq" id="lmB-MY-VhF"/>
                                 </connections>
                             </tableView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hA-a4-0xH">
-                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-45" y="386" width="400" height="162"/>
-                                </variation>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="6EB-yK-63R"/>
                                 <exclude reference="fp3-4v-pxm"/>
-                                <exclude reference="r8f-Vx-mre"/>
+                                <exclude reference="O34-tA-WRD"/>
+                                <exclude reference="fMV-we-aBs"/>
                                 <exclude reference="ziM-jk-zHr"/>
-                                <exclude reference="6hA-a4-0xH"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="6EB-yK-63R"/>
                                 <include reference="fp3-4v-pxm"/>
-                                <include reference="r8f-Vx-mre"/>
+                                <include reference="O34-tA-WRD"/>
+                                <include reference="fMV-we-aBs"/>
                                 <include reference="ziM-jk-zHr"/>
-                                <include reference="6hA-a4-0xH"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="selectDataOutputTextView" destination="r8f-Vx-mre" id="cbJ-pU-h3g"/>
+                        <outlet property="swiperLabel" destination="O34-tA-WRD" id="SZ8-LR-8Ed"/>
                         <outlet property="tableView" destination="ziM-jk-zHr" id="TVA-p9-z9p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdE-U8-ylP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229.5" y="922"/>
+            <point key="canvasLocation" x="229.5" y="860"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

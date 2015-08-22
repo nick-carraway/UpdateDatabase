@@ -14,6 +14,7 @@
 		2C07FA091B794392006DB009 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C07FA071B794392006DB009 /* LaunchScreen.xib */; };
 		2C07FA151B794392006DB009 /* UpdateDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07FA141B794392006DB009 /* UpdateDatabaseTests.swift */; };
 		2C8058D31B817E0400EE65BB /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8058D21B817E0400EE65BB /* TaskCell.swift */; };
+		2CFC55771B88042300097E9A /* TestPhoto.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2CFC55761B88042300097E9A /* TestPhoto.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		2C07FA131B794392006DB009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C07FA141B794392006DB009 /* UpdateDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDatabaseTests.swift; sourceTree = "<group>"; };
 		2C8058D21B817E0400EE65BB /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		2CFC55761B88042300097E9A /* TestPhoto.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestPhoto.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				2C07FA001B794392006DB009 /* ViewController.swift */,
 				2C07FA021B794392006DB009 /* Main.storyboard */,
 				2C07FA051B794392006DB009 /* Images.xcassets */,
+				2CFC55761B88042300097E9A /* TestPhoto.JPG */,
 				2C07FA071B794392006DB009 /* LaunchScreen.xib */,
 				2C07F9FC1B794392006DB009 /* Supporting Files */,
 			);
@@ -198,6 +201,7 @@
 				2C07FA041B794392006DB009 /* Main.storyboard in Resources */,
 				2C07FA091B794392006DB009 /* LaunchScreen.xib in Resources */,
 				2C07FA061B794392006DB009 /* Images.xcassets in Resources */,
+				2CFC55771B88042300097E9A /* TestPhoto.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
