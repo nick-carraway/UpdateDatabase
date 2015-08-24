@@ -14,7 +14,14 @@
 		2C07FA091B794392006DB009 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C07FA071B794392006DB009 /* LaunchScreen.xib */; };
 		2C07FA151B794392006DB009 /* UpdateDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07FA141B794392006DB009 /* UpdateDatabaseTests.swift */; };
 		2C8058D31B817E0400EE65BB /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8058D21B817E0400EE65BB /* TaskCell.swift */; };
-		2CFC55771B88042300097E9A /* TestPhoto.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2CFC55761B88042300097E9A /* TestPhoto.JPG */; };
+		2CA6B00B1B8AB097007068D9 /* Aardvark in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6B0081B8AB097007068D9 /* Aardvark */; };
+		2CA6B00C1B8AB097007068D9 /* Chimp.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6B0091B8AB097007068D9 /* Chimp.jpeg */; };
+		2CA6B00D1B8AB097007068D9 /* Barracuda.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6B00A1B8AB097007068D9 /* Barracuda.jpeg */; };
+		2CA6B0131B8AB41B007068D9 /* Dingo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6B00E1B8AB41B007068D9 /* Dingo.jpeg */; };
+		2CA6B0141B8AB41B007068D9 /* Egret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6B00F1B8AB41B007068D9 /* Egret.jpg */; };
+		2CA6B0151B8AB41B007068D9 /* Fossa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6B0101B8AB41B007068D9 /* Fossa.jpg */; };
+		2CA6B0161B8AB41B007068D9 /* Gerbil.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6B0111B8AB41B007068D9 /* Gerbil.jpeg */; };
+		2CA6B0171B8AB41B007068D9 /* Hippo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6B0121B8AB41B007068D9 /* Hippo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,14 @@
 		2C07FA131B794392006DB009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C07FA141B794392006DB009 /* UpdateDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDatabaseTests.swift; sourceTree = "<group>"; };
 		2C8058D21B817E0400EE65BB /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
-		2CFC55761B88042300097E9A /* TestPhoto.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestPhoto.JPG; sourceTree = "<group>"; };
+		2CA6B0081B8AB097007068D9 /* Aardvark */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aardvark; sourceTree = "<group>"; };
+		2CA6B0091B8AB097007068D9 /* Chimp.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chimp.jpeg; sourceTree = "<group>"; };
+		2CA6B00A1B8AB097007068D9 /* Barracuda.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Barracuda.jpeg; sourceTree = "<group>"; };
+		2CA6B00E1B8AB41B007068D9 /* Dingo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dingo.jpeg; sourceTree = "<group>"; };
+		2CA6B00F1B8AB41B007068D9 /* Egret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Egret.jpg; sourceTree = "<group>"; };
+		2CA6B0101B8AB41B007068D9 /* Fossa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fossa.jpg; sourceTree = "<group>"; };
+		2CA6B0111B8AB41B007068D9 /* Gerbil.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gerbil.jpeg; sourceTree = "<group>"; };
+		2CA6B0121B8AB41B007068D9 /* Hippo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hippo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +100,14 @@
 				2C07FA001B794392006DB009 /* ViewController.swift */,
 				2C07FA021B794392006DB009 /* Main.storyboard */,
 				2C07FA051B794392006DB009 /* Images.xcassets */,
-				2CFC55761B88042300097E9A /* TestPhoto.JPG */,
+				2CA6B0081B8AB097007068D9 /* Aardvark */,
+				2CA6B00A1B8AB097007068D9 /* Barracuda.jpeg */,
+				2CA6B0091B8AB097007068D9 /* Chimp.jpeg */,
+				2CA6B00E1B8AB41B007068D9 /* Dingo.jpeg */,
+				2CA6B00F1B8AB41B007068D9 /* Egret.jpg */,
+				2CA6B0101B8AB41B007068D9 /* Fossa.jpg */,
+				2CA6B0111B8AB41B007068D9 /* Gerbil.jpeg */,
+				2CA6B0121B8AB41B007068D9 /* Hippo.jpg */,
 				2C07FA071B794392006DB009 /* LaunchScreen.xib */,
 				2C07F9FC1B794392006DB009 /* Supporting Files */,
 			);
@@ -198,10 +219,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA6B0161B8AB41B007068D9 /* Gerbil.jpeg in Resources */,
+				2CA6B00B1B8AB097007068D9 /* Aardvark in Resources */,
+				2CA6B0171B8AB41B007068D9 /* Hippo.jpg in Resources */,
+				2CA6B0151B8AB41B007068D9 /* Fossa.jpg in Resources */,
 				2C07FA041B794392006DB009 /* Main.storyboard in Resources */,
 				2C07FA091B794392006DB009 /* LaunchScreen.xib in Resources */,
+				2CA6B00D1B8AB097007068D9 /* Barracuda.jpeg in Resources */,
+				2CA6B00C1B8AB097007068D9 /* Chimp.jpeg in Resources */,
+				2CA6B0131B8AB41B007068D9 /* Dingo.jpeg in Resources */,
 				2C07FA061B794392006DB009 /* Images.xcassets in Resources */,
-				2CFC55771B88042300097E9A /* TestPhoto.JPG in Resources */,
+				2CA6B0141B8AB41B007068D9 /* Egret.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

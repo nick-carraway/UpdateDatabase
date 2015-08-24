@@ -24,7 +24,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var maxCount = 0
     var urlString = NSURL(string: "http://nickcarraway.org/tabletest.php")!
     var myAsset = ""
-    var swipeCount = 1
+    var swipeCount = 3
+    var logoImages: [UIImage] = [(UIImage(named: "Aardvark")!),
+                                (UIImage(named: "Barracuda.jpeg")!),
+                                (UIImage(named: "Chimp.jpeg")!),
+                                (UIImage(named: "Dingo.jpeg")!),
+                                (UIImage(named: "Egret.jpg")!),
+                                (UIImage(named: "Fossa.jpg")!),
+                                (UIImage(named: "Gerbil.jpeg")!),
+                                (UIImage(named: "Hippo.jpg")!)
+                                ]
+    
+    
     
     @IBAction func userFieldUpdateButtonPressed(sender: AnyObject) {
     }
@@ -69,7 +80,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let testFrame : CGRect = CGRectMake(20,450,320,200)
             var testView : UIView = UIView(frame: testFrame)
             var bgImage: UIImageView?
-            var image: UIImage = UIImage(named: "TestPhoto.jpg")!
+            var image: UIImage = logoImages[1]
             bgImage = UIImageView(image: image)
             bgImage!.frame = CGRectMake(40,550,100,100)
             // end of test code 3.1 on 8/21/15 to programatically create imageviews
@@ -77,7 +88,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         testView.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
-        testView.alpha=0.5
+//        testView.alpha=0.5
         
         
         self.view.addSubview(testView)
@@ -257,13 +268,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let testFrame : CGRect = CGRectMake(20,450,320,200)
             var testView : UIView = UIView(frame: testFrame)
             var bgImage: UIImageView?
-            var image: UIImage = UIImage(named: "TestPhoto.jpg")!
+            var image: UIImage = logoImages[1]
             bgImage = UIImageView(image: image)
             bgImage!.frame = CGRectMake(40,550,100,100)
             // end of test code 3.1 on 8/21/15 to programatically create imageviews
             
             testView.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
-            testView.alpha=0.5
+//            testView.alpha=0.5
             
             self.view.addSubview(testView)
             self.view.addSubview(bgImage!)
@@ -283,6 +294,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         if (sender.direction == .Left) {
+            var bgImage: UIImageView?
+            let testFrame : CGRect = CGRectMake(20,450,320,200)
+            var testView : UIView = UIView(frame: testFrame)
+            testView.backgroundColor = UIColor(red: 0.8, green: 0.5, blue: 0.5, alpha: 1.0)
+            self.view.addSubview(testView)
             
             // start of test code block 3.5 on 8/23/15 to programmaticlly update labels based on array values
             
@@ -290,15 +306,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 swipeCount = -1
             }
             swipeCount++
+            
             var myArrayValue = myArray[swipeCount]
+            var image: UIImage = logoImages[swipeCount]
             swiperLabel.text = String(myArrayValue as NSString)
 
             var label = UILabel(frame: CGRectMake(100, 480, 190, 21))
             label.text = String(myArrayValue as NSString)
             self.view.addSubview(label)
             
+            bgImage = UIImageView(image: image)
+            bgImage!.frame = CGRectMake(40,550,100,100)
+            self.view.addSubview(bgImage!)
             // end  of test code block 3.5 on 8/23/15 to programmaticlly update labels based on array values
             
+
             
             
         }
