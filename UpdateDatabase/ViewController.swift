@@ -240,8 +240,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // TODO as of 8/21/15: fix the swipe indexing so that I can switch directions without falling out of index range.  Also, I need to fix issue where the wrapping results in blank label
 
         // TODO as of 8/21/15: it looks like issue with type casting right now is that I cannot switch between strings and numbers--
-        
-
 
         if (sender.direction == .Right) {
 //
@@ -264,11 +262,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             bgImage!.frame = CGRectMake(40,550,100,100)
             // end of test code 3.1 on 8/21/15 to programatically create imageviews
             
-            
-            
             testView.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
             testView.alpha=0.5
-            
             
             self.view.addSubview(testView)
             self.view.addSubview(bgImage!)
@@ -279,10 +274,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             // start of test code 2.9 o 8/21/15 to programatically create label in subview
             
-            
-            
             var label = UILabel(frame: CGRectMake(100, 480, 190, 21))
-            label.text = "I am a test label"
+            label.text = myAsset
             self.view.addSubview(label)
             
             // end of test code 2.9 o 8/21/15 to programatically create label in subview
@@ -290,12 +283,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         if (sender.direction == .Left) {
-            if swipeCount == 0 {
-                swipeCount = (maxCount + 1)
+            
+            // start of test code block 3.5 on 8/23/15 to programmaticlly update labels based on array values
+            
+            if swipeCount == (maxCount-1) {
+                swipeCount = -1
             }
-            swipeCount--
+            swipeCount++
             var myArrayValue = myArray[swipeCount]
             swiperLabel.text = String(myArrayValue as NSString)
+
+            var label = UILabel(frame: CGRectMake(100, 480, 190, 21))
+            label.text = String(myArrayValue as NSString)
+            self.view.addSubview(label)
+            
+            // end  of test code block 3.5 on 8/23/15 to programmaticlly update labels based on array values
+            
             
             
         }
