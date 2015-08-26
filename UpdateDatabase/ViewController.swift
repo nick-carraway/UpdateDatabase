@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var swiperLabel: UILabel!
     
+    var swipeCount1 = 4
     var myArray = []
     var count = -3
     var maxCount = 0
@@ -85,9 +86,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             bgImage!.frame = CGRectMake(40,550,100,100)
             // end of test code 3.1 on 8/21/15 to programatically create imageviews
 
+  
         
-        
-        testView.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+        //testView.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
 //        testView.alpha=0.5
         
         
@@ -315,12 +316,65 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             label.text = String(myArrayValue as NSString)
             self.view.addSubview(label)
             
-            bgImage = UIImageView(image: image)
-            bgImage!.frame = CGRectMake(40,550,100,100)
-            self.view.addSubview(bgImage!)
-            // end  of test code block 3.5 on 8/23/15 to programmaticlly update labels based on array values
+            // start of test code block 5.0 to animate the label programatically on 8/26/15
+            label.center.x  -= view.bounds.width
+            UIView.animateWithDuration(0.9, animations: {
+                label.center.x += self.view.bounds.width
+            })
+            // end of test code block 5.0 to animate the label programatically  on 8/26/15
             
 
+//            bgImage = UIImageView(image: image)
+//            bgImage!.frame = CGRectMake(40,550,100,100)
+//            self.view.addSubview(bgImage!)
+            // end  of test code block 3.5 on 8/23/15 to programmaticlly update labels based on array values
+            
+            
+            
+            // start of test code block 5.1 to animate the UIIMage programatically on 8/26/15
+            UIView.animateWithDuration(0.7, delay: 1.0, options: .CurveEaseOut, animations: {
+                
+                bgImage = UIImageView(image: image)
+                bgImage!.frame = CGRectMake(40,620,100,100)
+                self.view.addSubview(bgImage!)
+                
+                var bgImageTop = bgImage!.frame
+                bgImageTop.origin.y -= bgImageTop.size.height
+                
+                bgImage!.frame = bgImageTop
+                
+                }, completion: nil
+                
+            )
+            
+            // end of test code block 5.1 to animate the UIIMage programatically  on 8/26/15
+
+            
+
+            // start of test code block 4.1 on 8/24/15 to create an array that is type agnostic
+
+//            var myArray1 = [1, 2, 3, "a", "b", "c", 4, 5, 6]
+//            var maxCount1 = myArray.count - 1
+//            var label = UILabel(frame: CGRectMake(100, 480, 190, 21))
+//            var myArrayValue1 = myArray1[swipeCount1]
+//            
+//            if swipeCount1 == (maxCount1-1) {
+//                swipeCount1 = -1
+//            }
+//            swipeCount1++
+//            
+//            if let NSString = myArrayValue1 as? NSString {
+//                label.text = String(myArrayValue1 as String)
+//                self.view.addSubview(label)
+//            } else if let  Int = myArrayValue1 as? Int {
+//                label.text = (myArrayValue1 as NSString)
+//                self.view.addSubview(label)
+//            }
+//        
+        
+            // end of  test code block 4.1 on 8/24/15 to create an array that is type agnostic
+            
+            
             
             
         }
